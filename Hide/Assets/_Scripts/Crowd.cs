@@ -99,7 +99,7 @@ public class Crowd : MonoBehaviour
                 txt = "{\"" + txt;
                 txt = txt.TrimEnd(']', '}');
                 txt = txt + '}';
-                Debug.Log(txt);
+                //Debug.Log(txt);
                 string[] strs = txt.Split(new string[] { "}, {" }, StringSplitOptions.None);
                 for (int i = 0; i < strs.Length; i++)
                 {
