@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float _speed = 3.0f;
     [SerializeField] private float _rotation = 180f;
     [SerializeField] private CharacterController _controller;
+    public int score = 0;
     private Animator anim;
 
     void Start()
