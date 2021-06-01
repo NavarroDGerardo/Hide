@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private CharacterController _controller;
     public int score = 0;
     private Animator anim;
+    public bool _Sprint = false;
 
     void Start()
     {
@@ -26,10 +27,33 @@ public class Player : MonoBehaviour
         transform.Translate(Vector3.forward * moveTopBotton * _speed * Time.deltaTime);
 
         MoveAnimation(moveTopBotton);
+
+        if (_Sprint)
+        {
+            StartCoroutine(sprinttingCoroutine());
+            _speed = 5.0f;
+        }
+        else
+        {
+            _speed = 3.0f;
+        }
+
+        SprintAnimation(_Sprint);
     }
 
     public void MoveAnimation(float moving)
     {
         anim.SetFloat("moving", Mathf.Abs(moving));
+    }
+
+    public void SprintAnimation(bool sprint)
+    {
+        anim.SetBool("sprint", sprint);
+    }
+
+    IEnumerator sprinttingCoroutine()
+    {
+        yield return new WaitForSeconds(5f);
+        _Sprint = false;
     }
 }
