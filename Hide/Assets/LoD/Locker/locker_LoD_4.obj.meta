@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: WorldGridMaterial.003
-    second: {fileID: 2100000, guid: 86f62275dd057f84db53c6e60ac9a632, type: 2}
+    second: {fileID: 2100000, guid: c9f05c1ff4a039348b40f6d4c55123fd, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
