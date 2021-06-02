@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _speed = 3.0f;
+    private float _normalSpeed;
     [SerializeField] private float _rotation = 180f;
     [SerializeField] private CharacterController _controller;
     public int score = 0;
@@ -13,6 +14,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        _normalSpeed = _speed;
         anim = GetComponent<Animator>();
         _controller = GetComponent<CharacterController>();
     }
@@ -31,11 +33,11 @@ public class Player : MonoBehaviour
         if (_Sprint)
         {
             StartCoroutine(sprinttingCoroutine());
-            _speed = 5.0f;
+            _speed = _normalSpeed * 1.5f;
         }
         else
         {
-            _speed = 3.0f;
+            _speed = _normalSpeed;
         }
 
         SprintAnimation(_Sprint);
