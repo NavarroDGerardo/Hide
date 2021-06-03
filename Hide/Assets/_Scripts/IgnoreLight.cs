@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class IgnoreLight : MonoBehaviour
 {
-    public List<Light> Lights;
+    public new GameObject light;
     public bool cullLights = true;
 
+    private void Start()
+    {
+        light = GameObject.Find("Directional Light");
+    }
 
     void OnPreCull()
     {
         if (cullLights == true)
         {
-            foreach (Light light in Lights)
-            {
-                light.enabled = false;
-            }
+            light.SetActive(false);
         }
     }
 
@@ -23,10 +24,7 @@ public class IgnoreLight : MonoBehaviour
     {
         if (cullLights == true)
         {
-            foreach (Light light in Lights)
-            {
-                light.enabled = true;
-            }
+            light.SetActive(true);
         }
     }
 }

@@ -451,6 +451,9 @@ MonoBehaviour:
   matchSize: 4
   isNetworkActive: 0
   matchMaker: {fileID: 0}
+  seeker: {fileID: 2027935065420331782, guid: 4bde58b73253d4f49b69f0f505b21d1c, type: 3}
+  hiderPrefab: {fileID: 8142706322190237322, guid: 5601ee1dc9a0c654eb053279db581573,
+    type: 3}
 --- !u!4 &460658394
 Transform:
   m_ObjectHideFlags: 0

@@ -13,9 +13,7 @@ GameObject:
   - component: {fileID: 2027935065420331783}
   - component: {fileID: 2027935065420331778}
   - component: {fileID: 2027935065420331789}
-  - component: {fileID: 2027935065420331788}
   - component: {fileID: 2027935065420331779}
-  - component: {fileID: -4495602909690529470}
   - component: {fileID: -988432930911053947}
   m_Layer: 0
   m_Name: seeker
@@ -122,21 +120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Flashlight: {fileID: 2027935065906924634}
---- !u!114 &2027935065420331788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2027935065420331782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd76e13cc942ed64cb88c8a2d1b721d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Lights:
-  - {fileID: 0}
-  cullLights: 1
 --- !u!114 &2027935065420331779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,18 +133,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
---- !u!114 &-4495602909690529470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2027935065420331782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 921ceb7939c624969a567b4c88e17315, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-988432930911053947
 MonoBehaviour:
   m_ObjectHideFlags: 0
