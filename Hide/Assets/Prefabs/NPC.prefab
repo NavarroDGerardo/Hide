@@ -739,7 +739,7 @@ GameObject:
   - component: {fileID: 7958591487071225649}
   - component: {fileID: -620567032596337579}
   m_Layer: 0
-  m_Name: Ch20_nonPBR
+  m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -754,7 +754,7 @@ Transform:
   m_GameObject: {fileID: 3736128084174800881}
   m_LocalRotation: {x: 0, y: 0.9952068, z: 0, w: 0.09779347}
   m_LocalPosition: {x: 10.62362, y: 0, z: 11.061901}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 7223662880056697657}
   - {fileID: 5994498609979964471}

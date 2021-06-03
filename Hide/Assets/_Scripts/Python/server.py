@@ -4,11 +4,12 @@ import json
 
 import numpy as np
 from boid import Boid
+import random
 
-width = 30
-height = 30
+width = 633
+height = 697
 
-flock = [Boid(*np.random.rand(2)*10, width, height) for _ in range(20)]
+flock = [Boid(random.uniform(-64.0, 569.0), random.uniform(133.0, 830), width, height) for _ in range(20)]
 
 def updatePosition():
     global flock

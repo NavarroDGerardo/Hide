@@ -14,9 +14,7 @@ public class Poweup : MonoBehaviour
     {
         newSize = transform.localScale;
         maxSize = transform.localScale * 1.25f;
-        Debug.Log("maxSize " + maxSize.ToString("F4"));
         minSize = transform.localScale * 0.75f;
-        Debug.Log("minSize " + minSize.ToString("F4"));
         StartCoroutine(changeSizeCourutine());
     }
 

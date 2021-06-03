@@ -5,13 +5,14 @@ class Boid():
 
     def __init__(self, x, y, width, height):
         self.position = Vector(x, y)
+        print("x " + str(x) + " , y " + str(y))
         vec = (np.random.rand(2) - 0.5)*10
         self.velocity = Vector(*vec)
 
         vec = (np.random.rand(2) - 0.5)/2
         self.acceleration = Vector(*vec)
         self.max_force = 0.3
-        self.max_speed = 5
+        self.max_speed = 150
         self.perception = 100
 
         self.width = width
