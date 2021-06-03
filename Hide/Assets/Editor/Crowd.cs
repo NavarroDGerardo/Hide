@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using System;
-
-#if UNITY_EDITOR
-    using UnityEditor;
-#endif
+using UnityEditor;
 
 public class Crowd : MonoBehaviour
 {

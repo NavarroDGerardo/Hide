@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class ClickablePlayer : MonoBehaviour
 {
+    Player player;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = gameObject.GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -19,6 +21,11 @@ public class ClickablePlayer : MonoBehaviour
     void OnMouseDown()
     {
         GameMasterScript.instance.succesfulClick();
-        Destroy(gameObject);
+        if (player != null)
+        {
+            player.DieAnimation(true);
+
+        }
+        //Destroy(gameObject);
     }
 }

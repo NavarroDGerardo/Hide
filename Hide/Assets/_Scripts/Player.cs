@@ -53,9 +53,19 @@ public class Player : MonoBehaviour
         anim.SetBool("sprint", sprint);
     }
 
+    public void DieAnimation(bool death)
+    {
+        anim.SetBool("Death", death);
+    }
+
     IEnumerator sprinttingCoroutine()
     {
         yield return new WaitForSeconds(5f);
         _Sprint = false;
+    }
+
+    void OnMouseDown()
+    {
+        DieAnimation(true);
     }
 }
