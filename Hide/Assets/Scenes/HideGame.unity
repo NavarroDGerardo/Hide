@@ -182,7 +182,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226962489}
-  m_LocalRotation: {x: 0.14253041, y: 0.0048517413, z: -0.00069866225, w: 0.9897783}
+  m_LocalRotation: {x: 0.14253044, y: 0.004851708, z: -0.00069865753, w: 0.9897783}
   m_LocalPosition: {x: -0.01, y: 1.67, z: -1.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -299,7 +299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &579531358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,11 +314,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinPrefab: {fileID: 7442224066487616506, guid: 186c7de347f35d3469a4f569758269c2,
     type: 3}
-  positveX: 0
-  negativeX: 0
-  positveZ: 0
-  negativeZ: 0
-  instances: 5
+  positveX: 12
+  negativeX: -12
+  positveZ: 12
+  negativeZ: -12
+  instances: 20
 --- !u!4 &579531359
 Transform:
   m_ObjectHideFlags: 0
@@ -342,7 +342,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 666241710}
-  - component: {fileID: 666241709}
   m_Layer: 0
   m_Name: CrowdManager
   m_TagString: Untagged
@@ -350,23 +349,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &666241709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 666241708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a1bc3a01cb083443a1ada47722eb0f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 3736128084174800881, guid: b9b393dd38692fe4c9d2d9ce8d8676df, type: 3}
-  numberPeople: 20
-  timerToUpdate: 5
-  timer: 0
-  dt: 0
 --- !u!4 &666241710
 Transform:
   m_ObjectHideFlags: 0
@@ -506,10 +488,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinPrefab: {fileID: 5589578766775449403, guid: 2299fc114dce7104c8a86dd5a4e49412,
     type: 3}
-  positveX: 0
-  negativeX: 0
-  positveZ: 0
-  negativeZ: 0
+  positveX: 12
+  negativeX: -12
+  positveZ: 12
+  negativeZ: -12
   instances: 20
 --- !u!4 &1270886436
 Transform:
@@ -602,7 +584,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832776473}
-  m_LocalRotation: {x: 0.14253041, y: 0.0048517413, z: -0.00069866225, w: 0.9897783}
+  m_LocalRotation: {x: 0.14253044, y: 0.004851708, z: -0.00069865753, w: 0.9897783}
   m_LocalPosition: {x: -0.01, y: 1.67, z: -1.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
