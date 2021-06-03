@@ -4,24 +4,18 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float _speed = 3.0f;
-    private float _normalSpeed;
+    [SerializeField] private float _speed = 8.0f;
+    private float _normalSpeed = 8.0f;
     [SerializeField] private float _rotation = 180f;
-    [SerializeField] private CharacterController _controller;
     public int score = 0;
-    private Animator anim;
+    public Animator anim;
     public bool _Sprint = false;
     public bool _Slow = false;
 
-    void Start()
-    {
-        _normalSpeed = _speed;
-        anim = GetComponent<Animator>();
-        _controller = GetComponent<CharacterController>();
-    }
+    public bool lp;
 
     // Update is called once per frame
-    void Update()
+    public void movement()
     {
         Vector3 rotation = new Vector3(0, Input.GetAxisRaw("Horizontal") * _rotation * Time.deltaTime);
         this.transform.Rotate(rotation);
@@ -89,6 +83,9 @@ public class Player : MonoBehaviour
 
     void OnMouseDown()
     {
-        DieAnimation(true);
+        if (!lp)
+        {
+            DieAnimation(true);
+        }
     }
 }

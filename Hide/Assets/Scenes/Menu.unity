@@ -438,7 +438,7 @@ MonoBehaviour:
     m_MaxTimerTimeout: 12000
     m_MinNetSimulatorTimeout: 1
     m_MaxNetSimulatorTimeout: 12000
-  m_Channels: 
+  m_Channels: 0500000000000000
   m_UseWebSockets: 0
   m_UseSimulator: 0
   m_SimulatedLatency: 1
@@ -451,8 +451,7 @@ MonoBehaviour:
   matchSize: 4
   isNetworkActive: 0
   matchMaker: {fileID: 0}
-  seeker: {fileID: 2027935065420331782, guid: 4bde58b73253d4f49b69f0f505b21d1c, type: 3}
-  hiderPrefab: {fileID: 8142706322190237322, guid: 5601ee1dc9a0c654eb053279db581573,
+  seekerPrefab: {fileID: 2027935065420331782, guid: 4bde58b73253d4f49b69f0f505b21d1c,
     type: 3}
 --- !u!4 &460658394
 Transform:

@@ -572,6 +572,7 @@ MonoBehaviour:
   matchSize: 4
   isNetworkActive: 0
   matchMaker: {fileID: 0}
+  seekerPrefab: {fileID: 0}
 --- !u!4 &1396150205
 Transform:
   m_ObjectHideFlags: 0
