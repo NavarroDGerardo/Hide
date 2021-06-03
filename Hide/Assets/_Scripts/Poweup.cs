@@ -13,8 +13,10 @@ public class Poweup : MonoBehaviour
     void Start()
     {
         newSize = transform.localScale;
-        maxSize = new Vector3(1f, 1f, 1f);
-        minSize = new Vector3(0.4f, 0.4f, 0.4f);
+        maxSize = transform.localScale * 1.25f;
+        Debug.Log("maxSize " + maxSize.ToString("F4"));
+        minSize = transform.localScale * 0.75f;
+        Debug.Log("minSize " + minSize.ToString("F4"));
         StartCoroutine(changeSizeCourutine());
     }
 
@@ -24,11 +26,11 @@ public class Poweup : MonoBehaviour
     {
         if (grow)
         {
-            newSize += new Vector3(1, 1, 1) * 0.05f;
+            newSize += new Vector3(1, 1, 1) * 0.15f;
         }
         else
         {
-            newSize -= new Vector3(1, 1, 1) * 0.05f;
+            newSize -= new Vector3(1, 1, 1) * 0.15f;
         }
 
         if (transform.localScale.x > maxSize.x && transform.localScale.y > maxSize.y && transform.localScale.z > maxSize.z)

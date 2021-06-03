@@ -33,7 +33,7 @@ public class Crowd : MonoBehaviour
         people = new GameObject[numberPeople];
         for(int i = 0; i < people.Length; i++)
         {
-            people[i] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
+            people[i] = Instantiate(prefab, transform.position, Quaternion.identity);
         }
 
         positions = new List<List<Vector3>>();
@@ -54,7 +54,7 @@ public class Crowd : MonoBehaviour
         if (timer < 0)
         {
             timer = timerToUpdate;
-            Vector3 fakepos = new Vector3(3.44f, 0, -15.70f);
+            Vector3 fakepos = transform.position;
             string json = EditorJsonUtility.ToJson(fakepos);
             StartCoroutine(SendData(json));
         }
