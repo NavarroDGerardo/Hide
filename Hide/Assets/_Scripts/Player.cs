@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public int score = 0;
     private Animator anim;
     public bool _Sprint = false;
+    public bool _Slow = false;
 
     void Start()
     {
@@ -40,7 +41,18 @@ public class Player : MonoBehaviour
             _speed = _normalSpeed;
         }
 
+        if (_Slow)
+        {
+            StartCoroutine(slowCoroutine());
+            _speed = _normalSpeed * 0.5f;
+        }
+        else
+        {
+            _speed = _normalSpeed;
+        }
+
         SprintAnimation(_Sprint);
+        SlowAnimation(_Slow);
     }
 
     public void MoveAnimation(float moving)
@@ -58,10 +70,21 @@ public class Player : MonoBehaviour
         anim.SetBool("Death", death);
     }
 
+    public void SlowAnimation(bool slow)
+    {
+        anim.SetBool("slowWalking", slow);
+    }
+
     IEnumerator sprinttingCoroutine()
     {
         yield return new WaitForSeconds(5f);
         _Sprint = false;
+    }
+
+    IEnumerator slowCoroutine()
+    {
+        yield return new WaitForSeconds(2.5f);
+        _Slow = false;
     }
 
     void OnMouseDown()
