@@ -385,7 +385,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8142706322190237429}
   - component: {fileID: -8830830019687692158}
-  - component: {fileID: 5462247394721924748}
   m_Layer: 0
   m_Name: Hidder
   m_TagString: Untagged
@@ -443,18 +442,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &5462247394721924748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8142706322190237322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 921ceb7939c624969a567b4c88e17315, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8142706322199157648
 GameObject:
   m_ObjectHideFlags: 0

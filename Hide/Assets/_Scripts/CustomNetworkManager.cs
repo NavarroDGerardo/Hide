@@ -5,16 +5,12 @@ using UnityEngine.Networking;
 
 public class CustomNetworkManager : NetworkManager{
 
-    public GameObject hiderPrefab;
+    //public GameObject hiderPrefab;
 
     NetworkClient myClient;
-
-    /*
-
-    public void OnConnected(NetworkConnection conn, NetworkReader reader){
-        Debug.Log("Connected to server");
-    }
-    */
+    //public void OnConnected(NetworkConnection conn, NetworkReader reader){
+    //    Debug.Log("Connected to server");
+    //}
 
     public override void OnStartClient(NetworkClient client){
 
